@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WindowsLicenseStore - Premium Windows Licenses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">⊞</span>
+                WindowsLicenseStore
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li>
+                        <div class="cart-icon" id="cartButton">
+                            🛒
+                            <span class="cart-count" id="cartCount">0</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>Authentic Windows Licenses</h1>
+            <p>Get genuine Windows 10 and Windows 11 licenses for home and professional use at the best prices.</p>
+            <a href="#products" class="cta-button">View Products</a>
+        </section>
+        
+        <section id="products">
+            <h2 class="products-heading">Our Products</h2>
+            <div class="products-grid" id="productsContainer">
+                <!-- Products will be inserted here by JavaScript -->
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 WindowsLicenseStore. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">FAQ</a>
+            </div>
+            <p><small>This is a fictional store created for demonstration purposes only.</small></p>
+            <p style="margin-top: 15px; font-weight: 500;">Luis Jamioy Guerrero | Software Engineering Student | 1st Semester</p>
+        </div>
+    </footer>
+    
+    <!-- Shopping Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Your Shopping Cart</h3>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            <div id="cartItemsContainer" class="cart-items">
+                <!-- Cart items will be inserted here by JavaScript -->
+            </div>
+            <div class="cart-summary">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">$0.00</span>
+                </div>
+            </div>
+            <button class="checkout-button" id="checkoutButton">Proceed to Checkout</button>
+        </div>
+    </div>
+    
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">Item added to cart!</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
